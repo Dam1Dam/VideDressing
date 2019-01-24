@@ -10,7 +10,7 @@
 	$pdostat = $pdo->query($req2);
 	$result = $pdostat->fetchAll(\PDO::FETCH_ASSOC);
 	foreach ($result as $r) {
-		$req3 = "update article set statut='soumis' where codeArticle = '". $r['codeArticle'] . "';";
+		$req3 = "update article set statut='en vente' where codeArticle = '". $r['codeArticle'] . "';";
 		$pdostat2 = $pdo->query($req3);
 	}
 
