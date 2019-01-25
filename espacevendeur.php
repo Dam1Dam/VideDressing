@@ -45,7 +45,7 @@
 						echo '<h3 class="project-name">Liste n°' . $r['codeListe'] . '</h3>';
 						echo '<p class="project-title">Code vendeur : ' . $r['codeVendeur'] . '</p>';
 						echo '<p class="project-label">Statut : ' . $r['statut']. '</p>';
-						echo '<a href="liste.php?codeListe=' . $r['codeListe'] . '"><i class="glyphicon glyphicon-pencil"></i></a>';
+						echo '<a href="liste.php?codeListe=' . $r['codeListe'] . '"> <i class="glyphicon glyphicon-pencil"></i></a>';
 						echo '<button type="submit" id="btn-submit" class="fsSubmitButton"><a href="supprimerListe.php?codeListe=' . $r['codeListe'] . '">Supprimer</a></button>';
 						echo '</li>';
 					}

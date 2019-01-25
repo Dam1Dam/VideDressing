@@ -35,7 +35,7 @@
 include 'connectBD.php';
 
 
-$req = $pdo->prepare("SELECT * FROM liste, vendeur WHERE statut='acceptee'");
+$req = $pdo->prepare("SELECT * FROM liste NATURAL JOIN vendeur WHERE statut='acceptee'");
 $req->execute();
 
 echo '<br> <br><table>';
